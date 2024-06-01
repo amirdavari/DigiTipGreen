@@ -5,7 +5,7 @@
              Title="LoginView">
     <Grid RowDefinitions=".3*,.7*">
         <Image Source="tip.png" Aspect="AspectFill" />
-        <Grid BackgroundColor="#4f3f9b" Opacity=".9" />
+        <Grid BackgroundColor="#4f3f9b" Opacity=".8" />
         <Grid RowDefinitions="*,*" >
             <Label FontSize="30" FontFamily="bold" HorizontalOptions="Center" FontAttributes="Bold" VerticalOptions="Center" TextColor="White">DIGI TIP GREEN</Label>
             <Label FontSize="15" FontFamily="bold" HorizontalOptions="Center" VerticalOptions="Start" TextColor="White" Grid.Row="1">This is a testversion</Label>
@@ -23,6 +23,67 @@
                 <Label FontFamily="medium"
                        Text="Login to continue"
                        TextColor="#A3A3A4" />
+                <Grid ColumnDefinitions=".2*,.8*" Margin="0,30,0,0">
+                    <RoundRectangle BackgroundColor="#EDEBF6"
+                                    CornerRadius="10"
+                                    HeightRequest="60"
+                                    WidthRequest="60"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
+                    <Image HorizontalOptions="Center">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="icons"
+                                Glyph="&#xE801;"
+                                Size="44"
+                                Color="#4f3f9b" />
+                        </Image.Source>
+                    </Image>
+                    <Entry Grid.Column="1"
+                           Placeholder="Username"
+                           Text="reza"
+                           VerticalOptions="Center"
+                           x:Name="Username"/>
+
+                </Grid>
+                <Grid ColumnDefinitions=".2*,.8*" Margin="0,30,0,0">
+                    <RoundRectangle BackgroundColor="#EDEBF6"
+                        CornerRadius="10"
+                        HeightRequest="60"
+                        WidthRequest="60"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
+                    <Image HorizontalOptions="Center">
+                        <Image.Source>
+                            <FontImageSource
+                                    FontFamily="icons"
+                                    Glyph="&#xE802;"
+                                    Size="44"
+                                    Color="#4f3f9b" />
+                        </Image.Source>
+                    </Image>
+                    <Entry Grid.Column="1"
+                           Placeholder="Password"
+                           Text=""
+                           IsPassword="True"
+                           VerticalOptions="Center"
+                           x:Name="Password"/>
+
+                </Grid>
+
+                <Button 
+                    Margin="0,20,0,0"
+                    BackgroundColor="#4f3f9b"
+                    HeightRequest="60"
+                    Text="Login"
+                    FontSize="Medium"
+                    TextColor="#fbf6fd"
+                    Clicked="Button_Clicked"/>
+                <Label Margin="9,20,0,0"
+                       Text="You don't have any account? Register here!"
+                       TextColor="#4f3f9b"
+                       HorizontalOptions="Center"
+                       TextDecorations="Underline" />
             </VerticalStackLayout>
         </Grid>
     </Grid>

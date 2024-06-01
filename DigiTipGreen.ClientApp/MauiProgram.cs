@@ -15,6 +15,7 @@ namespace DigiTipGreen.ClientApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("Lato-Bold.ttf", "bold");
                     fonts.AddFont("Lato-Regular.ttf", "medium");
+                    fonts.AddFont("fontello.ttf", "icons");
                 });
 
 #if DEBUG
