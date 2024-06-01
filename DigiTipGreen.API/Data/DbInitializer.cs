@@ -13,7 +13,7 @@ namespace DigiTipGreen.API.Data
                 await usermanager.CreateAsync(user, "Pa$$w0rd");
                 await usermanager.AddToRolesAsync(user, ["EPerson", "APerson", "Admin"]);
 
-                var user2 = new User { UserName = "Reza", Email = "reza@test.com" };
+                var user2 = new User { UserName = "Amir", Email = "amir@test.com" };
                 await usermanager.CreateAsync(user2, "Pa$$w0rd");
                 await usermanager.AddToRolesAsync(user, ["EPerson", "APerson", "Admin"]);
             }
